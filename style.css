@@ -1,0 +1,165 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    max-width: 1440px;
+    background-color: var(--White);
+}
+
+main {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+main p {
+    color: var(--Very-Dark-Magenta);
+    margin: 30px 10px;
+    line-height: 1.5;
+}
+
+
+h1 {
+    padding: 0 20px;
+    color: var(--Very-Dark-Magenta);
+}
+
+.fiveStar {
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.fiveStar:last-child {
+    margin-bottom: 50px;
+}
+
+.fiveStar span {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+.ratingStar {
+    line-height: 3;
+}
+
+.ratingStar img {
+    width: 20px;
+}
+
+
+.peopleReview {
+    background-color: var(--Very-Dark-Magenta);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.peopleReview p {
+    color: var(--Light-Grayish-Magenta);
+    line-height: 1.7;
+}
+
+.imgStyle img {
+    border-radius: 50%;
+    width: 50px;
+    float: left;
+    margin: -8px 10px;
+    
+}
+
+.userRule {
+    text-align: left;
+    margin: 20px;
+}
+
+.userRule #name {
+    color: var(--Light-Grayish-Magenta);
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 70px;
+   
+
+}
+
+.userRule #rule {
+    color: var(--Soft-Pink);
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+
+@media (min-width: 700px)
+{
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .col-2 {
+        flex-basis: 40%;
+    }
+
+    col-2 p {
+        margin-top: -20px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .fiveStar {
+        background-color: var(--Light-Grayish-Magenta);
+        padding: 10px;
+        margin: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+
+    }
+    section .fiveStar:nth-child(1) {
+        transform: translateX(-10%);
+    }
+    section .fiveStar:nth-child(3) {
+        transform: translateX(10%);
+    }
+
+    .review {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .review .peopleReview:nth-child(2){
+        transform: translateY(30px);
+    }
+    .review .peopleReview:nth-child(3){
+        transform: translateY(60px);
+    }
+    
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
