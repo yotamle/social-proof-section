@@ -87,7 +87,7 @@ h1 {
     margin: 20px;
 }
 
-.userRule #name {
+.userRule .name {
     color: var(--Light-Grayish-Magenta);
     font-weight: 700;
     font-size: 15px;
@@ -96,7 +96,7 @@ h1 {
 
 }
 
-.userRule #rule {
+.userRule .rule {
     color: var(--Soft-Pink);
     font-weight: 400;
     font-size: 15px;
